@@ -1,8 +1,8 @@
 Feature: As a user I want get information with relation to clients
 
-   Scenario Outline: Get response
+Scenario Outline:Get response
 
-    When I send a get request with the user 2
+    When I send a get request with the user "2"
     Then I can see the dates of the user
     |First Name| <First Name> |
     |Last Name | <Last Name>  |

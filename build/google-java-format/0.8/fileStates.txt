@@ -1,3 +1,4 @@
-src/test/java/stepsdefinitions/GetUserStepDefinition.java,1675877099507227000,713,FORMATTED
-src/test/java/runners/GetUser.java,1675877099480001000,331,FORMATTED
+src/test/java/runners/GetUser.java,1675882544333190000,387,FORMATTED
 src/test/java/stepsdefinitions/Setup.java,1675877099526585000,52,FORMATTED
+src/main/java/tasks/GetUser.java,1675884253771570000,734,FORMATTED
+src/test/java/stepsdefinitions/GetUserStepDefinition.java,1675881361778970000,876,FORMATTED

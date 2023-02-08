@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="As a user I want get information with relation to clients" skipped="1" tests="1" time="0.33" timestamp="2023-02-08 12:25:09"><testcase name="Get response"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="As a user I want get information with relation to clients" skipped="0" tests="1" time="5.2" timestamp="2023-02-08 02:24:21"><testcase name="Get response"><error message="Step [I can see the dates of the user] is defined with 0 parameters at 'stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser()'.&#10;However, the gherkin step has 1 arguments:&#10; * Table:&#10;      | First Name | Janet  |&#10;      | Last Name  | Weaver |&#10;      | Id         | 2      |&#10;&#10;Step text: I can see the dates of the user" type="io.cucumber.core.exception.CucumberException">Step [I can see the dates of the user] is defined with 0 parameters at 'stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | First Name | Janet  |
+      | Last Name  | Weaver |
+      | Id         | 2      |
+
+Step text: I can see the dates of the user</error><system-err>Step [I can see the dates of the user] is defined with 0 parameters at 'stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | First Name | Janet  |
+      | Last Name  | Weaver |
+      | Id         | 2      |
+
+Step text: I can see the dates of the user&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:134)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:49)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:51)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:66)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)&#13;
+</system-err></testcase></testsuite>
