@@ -1,0 +1,3 @@
+src/test/java/stepsdefinitions/GetUserStepDefinition.java,1675877099507227000,713,FORMATTED
+src/test/java/runners/GetUser.java,1675877099480001000,331,FORMATTED
+src/test/java/stepsdefinitions/Setup.java,1675877099526585000,52,FORMATTED
