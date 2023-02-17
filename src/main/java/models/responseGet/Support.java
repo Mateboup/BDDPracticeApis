@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @AllArgsConstructor
-public class Support{
-	private String text;
-	private String url;
-
-
+public class Support {
+  private String text;
+  private String url;
 }

@@ -1,4 +1,11 @@
+src/main/java/models/responseGet/Support.java,1676044953564247000,357,FORMATTED
+src/main/java/tasks/GetUser.java,1676044953668186000,694,FORMATTED
+src/main/java/models/responseGet/Response.java,1676044953533785000,361,FORMATTED
+src/test/java/stepsdefinitions/GetUserStepDefinition.java,1676064770096557000,2144,FORMATTED
+src/main/java/exceptions/InformationUserError.java,1676044953468204000,285,FORMATTED
+src/main/java/questions/GetUserName.java,1676064724181584000,487,FORMATTED
+src/main/java/exceptions/CodeResponseServiceError.java,1676044953439118000,316,FORMATTED
 src/test/java/runners/GetUser.java,1675882544333190000,387,FORMATTED
 src/test/java/stepsdefinitions/Setup.java,1675877099526585000,52,FORMATTED
-src/main/java/tasks/GetUser.java,1675884253771570000,734,FORMATTED
-src/test/java/stepsdefinitions/GetUserStepDefinition.java,1675881361778970000,876,FORMATTED
+src/main/java/questions/CodeResponserService.java,1676044953594633000,432,FORMATTED
+src/main/java/models/responseGet/Data.java,1676045437286573000,858,FORMATTED

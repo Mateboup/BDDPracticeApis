@@ -11,8 +11,7 @@ import exceptions.CodeResponseServiceError;
 import exceptions.InformationUserError;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.responseGet.Data;
-import net.serenitybdd.rest.SerenityRest;
+import java.util.Map;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
@@ -21,28 +20,28 @@ import questions.CodeResponserService;
 import questions.GetUserName;
 import tasks.GetUser;
 
-import java.util.Map;
-
 public class GetUserStepDefinition {
   @When("I send a get request with the user {string}")
   public void iSendAGetRequestWithTheUser(String arg0) {
     OnStage.setTheStage(new OnlineCast());
-    theActorCalled("Edwin").whoCan(CallAnApi.at("https://reqres.in"));
+    theActorCalled("SAM").whoCan(CallAnApi.at("https://reqres.in"));
     theActorInTheSpotlight().attemptsTo(GetUser.withTheData());
   }
 
   @Then("I can see the dates of the user")
-  public void iCanSeeTheDatesOfTheUser(Map<String,String> mapFeatures) {
-    theActorInTheSpotlight().remember("mapFeatures",mapFeatures);
-    String firstName =mapFeatures.get("First Name");
+  public void iCanSeeTheDatesOfTheUser(Map<String, String> mapFeatures) {
+    theActorInTheSpotlight().remember("mapFeatures", mapFeatures);
     theActorInTheSpotlight()
-            .should(
-                    seeThat(CodeResponserService.get(), equalTo(HttpStatus.SC_OK))
-                            .orComplainWith(CodeResponseServiceError.class, CODE_RESPONSE_ERROR));
+        .should(
+            seeThat(CodeResponserService.get(), equalTo(HttpStatus.SC_OK))
+                .orComplainWith(CodeResponseServiceError.class, CODE_RESPONSE_ERROR));
     /*theActorInTheSpotlight()
-            .should(
-                    seeThat(, equalTo(firstName))
-                            .orComplainWith(InformationUserError.class, INFORMATION_USER_ERROR));*/
-  }
+    .should(seeThat(SerenityRest.lastResponse().as(Data.class).getFirstName(), (Question<Boolean>) equalTo(mapFeatures.get("First Name")))
+            .orComplainWith(InformationUserError.class, INFORMATION_USER_ERROR));*/
+
+    theActorInTheSpotlight()
+        .should(
+            seeThat(GetUserName.ofTheService(), equalTo(mapFeatures.get("First Name")))
+                .orComplainWith(InformationUserError.class, INFORMATION_USER_ERROR));
   }
 }

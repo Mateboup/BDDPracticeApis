@@ -1,2 +1,16 @@
 tasks/GetUser.java
  tasks.GetUser
+models/responseGet/Support.java
+ models.responseGet.Support
+exceptions/InformationUserError.java
+ exceptions.InformationUserError
+exceptions/CodeResponseServiceError.java
+ exceptions.CodeResponseServiceError
+questions/CodeResponserService.java
+ questions.CodeResponserService
+models/responseGet/Data.java
+ models.responseGet.Data
+models/responseGet/Response.java
+ models.responseGet.Response
+questions/GetUserName.java
+ questions.GetUserName

@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @AllArgsConstructor
-public class Response{
-	private Data data;
-	private Support support;
-
+public class Response {
+  private Data data;
+  private Support support;
 }
