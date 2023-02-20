@@ -8,7 +8,7 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 2 Steps (?[31m1 failed?[0m, ?[32m1 passed?[0m)
-0m10,297s
+0m6,990s
 
 
 java.lang.AssertionError: La información del usuario es errada - 
@@ -17,7 +17,7 @@ Expected: "Janet"
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at ?.I can see the dates of the user(file:///C:/Automatizaciones/Proyectos_Automatizacion/BDDPracticeServices/src/test/resources/features/get_user.feature:6)
 
 

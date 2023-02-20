@@ -1,6 +1,6 @@
 package questions;
 
-import models.responseGet.Data;
+import models.responseGet.Response;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -13,7 +13,9 @@ public class GetUserName implements Question<String> {
 
   @Override
   public String answeredBy(Actor actor) {
-    Data data = SerenityRest.lastResponse().as(Data.class);
-    return data.getFirstName();
+    // SerenityRest.lastResponse().body().prettyPrint();
+    Response response = SerenityRest.lastResponse().body().as(Response.class);
+    SerenityRest.lastResponse().body().prettyPrint();
+    return response.getData().getFirst_Name();
   }
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="As a user I want get information with relation to clients" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-17T19:23:47" hostname="QV-4398" time="9.742">
+<testsuite name="As a user I want get information with relation to clients" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-20T20:54:34" hostname="QV-4398" time="6.687">
   <properties/>
-  <testcase name="Get response" classname="As a user I want get information with relation to clients" time="9.742">
+  <testcase name="Get response" classname="As a user I want get information with relation to clients" time="6.687">
     <failure message="java.lang.AssertionError: La información del usuario es errada - &#10;Expected: &quot;Janet&quot;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: La información del usuario es errada - 
 Expected: &quot;Janet&quot;
      but: was null
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at ✽.I can see the dates of the user(file:///C:/Automatizaciones/Proyectos_Automatizacion/BDDPracticeServices/src/test/resources/features/get_user.feature:6)
 </failure>
   </testcase>
@@ -25,7 +25,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 17 Feb 2023 19:23:53 GMT
+Date: Mon, 20 Feb 2023 20:54:36 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -34,13 +34,12 @@ Access-Control-Allow-Origin: *
 Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
 Via: 1.1 vegur
 Cache-Control: max-age=14400
-CF-Cache-Status: HIT
-Age: 876
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=f7SEYdKyfuFRQO6KEyGoqtldI3UCYP82eERU2QETbBay8UGDPZGl7y89DA6gN1G1NvC%2Bq%2BbBmKM8w7e7koIycPboezg%2FZ%2BEBYhQeK5SfA2SrHSHHE84oHGX4og%3D%3D"}],"group":"cf-nel","max_age":604800}
+CF-Cache-Status: REVALIDATED
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JTtEdAA9UIK3WK1hIfwDY1ysR1zDpVqGqrbcDWQT8MqJYpYT2WJwN4iEWWe6z0lk5uNpFwI%2Fh9oHDR2VRG7TlAYkdZLVgC5lVDEuPaC7V0EWg%2Fxk2Z7XnWF94w%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 79b0e66c0d9a2248-MIA
+CF-RAY: 79ca236adb1fb3e9-MIA
 Content-Encoding: gzip
 
 {
@@ -56,7 +55,33 @@ Content-Encoding: gzip
         "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
     }
 }
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
@@ -89,7 +114,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +195,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -251,7 +276,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -332,7 +357,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -416,7 +441,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -500,7 +525,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -584,7 +609,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -668,7 +693,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -751,7 +776,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -834,7 +859,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -917,7 +942,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1000,7 +1025,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1083,7 +1108,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1166,7 +1191,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1249,7 +1274,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1330,7 +1355,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1411,7 +1436,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1492,7 +1517,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1573,7 +1598,7 @@ java.lang.ClassNotFoundException: exceptions
 	at net.serenitybdd.screenplay.ErrorTally.recordError(ErrorTally.java:22)
 	at net.serenitybdd.screenplay.Actor.check(Actor.java:342)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:311)
-	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)
+	at stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

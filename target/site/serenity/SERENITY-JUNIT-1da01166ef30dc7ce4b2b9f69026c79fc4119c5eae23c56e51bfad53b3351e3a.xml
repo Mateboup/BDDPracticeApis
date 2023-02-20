@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="As a user I want get information with relation to clients" skipped="0" tests="1" time="8.85" timestamp="2023-02-17 02:23:48"><testcase name="Get response"><failure message="La información del usuario es errada - &#10;Expected: &quot;Janet&quot;&#10;     but: was null" type="java.lang.AssertionError">La información del usuario es errada - 
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="As a user I want get information with relation to clients" skipped="0" tests="1" time="6.28" timestamp="2023-02-20 03:54:35"><testcase name="Get response"><failure message="La información del usuario es errada - &#10;Expected: &quot;Janet&quot;&#10;     but: was null" type="java.lang.AssertionError">La información del usuario es errada - 
 Expected: "Janet"
      but: was null</failure><system-err>La información del usuario es errada - 
 Expected: "Janet"
      but: was null&#13;
-stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:43)&#13;
+stepsdefinitions.GetUserStepDefinition.iCanSeeTheDatesOfTheUser(GetUserStepDefinition.java:40)&#13;
 ✽.I can see the dates of the user(file:///C:/Automatizaciones/Proyectos_Automatizacion/BDDPracticeServices/src/test/resources/features/get_user.feature:6)&#13;
 </system-err></testcase></testsuite>

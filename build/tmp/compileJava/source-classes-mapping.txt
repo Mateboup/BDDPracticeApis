@@ -4,13 +4,17 @@ models/responseGet/Support.java
  models.responseGet.Support
 exceptions/InformationUserError.java
  exceptions.InformationUserError
+utils/Enums/Enums.java
+ utils.Enums.Enums
 exceptions/CodeResponseServiceError.java
  exceptions.CodeResponseServiceError
+models/responseGet/Response.java
+ models.responseGet.Response
+ models.responseGet.Response$ResponseBuilder
 questions/CodeResponserService.java
  questions.CodeResponserService
 models/responseGet/Data.java
  models.responseGet.Data
-models/responseGet/Response.java
- models.responseGet.Response
+ models.responseGet.Data$DataBuilder
 questions/GetUserName.java
  questions.GetUserName

@@ -35,9 +35,6 @@ public class GetUserStepDefinition {
         .should(
             seeThat(CodeResponserService.get(), equalTo(HttpStatus.SC_OK))
                 .orComplainWith(CodeResponseServiceError.class, CODE_RESPONSE_ERROR));
-    /*theActorInTheSpotlight()
-    .should(seeThat(SerenityRest.lastResponse().as(Data.class).getFirstName(), (Question<Boolean>) equalTo(mapFeatures.get("First Name")))
-            .orComplainWith(InformationUserError.class, INFORMATION_USER_ERROR));*/
 
     theActorInTheSpotlight()
         .should(
