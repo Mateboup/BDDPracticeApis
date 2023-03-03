@@ -2,7 +2,8 @@ package utils.Enums;
 
 public enum Enums {
   GET_USER("/api/users/2"),
-  CREATE_USER("/api/users");
+  CREATE_USER("/api/users"),
+  REQUEST_CREATE_USER("Request Create User");
 
   private String valor;
 

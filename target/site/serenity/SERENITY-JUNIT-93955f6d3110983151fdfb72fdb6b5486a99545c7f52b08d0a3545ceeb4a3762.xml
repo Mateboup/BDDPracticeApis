@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="As a user I want create an account" skipped="1" tests="1" time="0.34" timestamp="2023-03-03 05:27:19"><testcase name="Create user in the app"><compromised message="Environment 'baseurl' property undefined for environment 'null'" type="net.serenitybdd.core.environment.UndefinedEnvironmentVariableException">Environment 'baseurl' property undefined for environment 'null'</compromised><system-err>Environment 'baseurl' property undefined for environment 'null'&#13;
+stepsdefinitions.Setup.configurarUrlBase(Setup.java:22)&#13;
+</system-err></testcase></testsuite>

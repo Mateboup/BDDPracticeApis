@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="As a user I want get information with relation to clients" skipped="0" tests="1" time="6.28" timestamp="2023-02-20 03:54:35"><testcase name="Get response"><failure message="La información del usuario es errada - &#10;Expected: &quot;Janet&quot;&#10;     but: was null" type="java.lang.AssertionError">La información del usuario es errada - 
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="As a user I want get information with relation to clients" skipped="0" tests="1" time="6.52" timestamp="2023-03-03 03:11:58"><testcase name="Get response"><failure message="La información del usuario es errada - &#10;Expected: &quot;Janet&quot;&#10;     but: was null" type="java.lang.AssertionError">La información del usuario es errada - 
 Expected: "Janet"
      but: was null</failure><system-err>La información del usuario es errada - 
 Expected: "Janet"

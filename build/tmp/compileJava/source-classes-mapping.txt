@@ -1,11 +1,12 @@
-tasks/GetUser.java
- tasks.GetUser
+questions/GetUserName.java
+ questions.GetUserName
 models/responseGet/Support.java
  models.responseGet.Support
 exceptions/InformationUserError.java
  exceptions.InformationUserError
-utils/Enums/Enums.java
- utils.Enums.Enums
+models/responseGet/Data.java
+ models.responseGet.Data
+ models.responseGet.Data$DataBuilder
 exceptions/CodeResponseServiceError.java
  exceptions.CodeResponseServiceError
 models/responseGet/Response.java
@@ -13,8 +14,27 @@ models/responseGet/Response.java
  models.responseGet.Response$ResponseBuilder
 questions/CodeResponserService.java
  questions.CodeResponserService
-models/responseGet/Data.java
- models.responseGet.Data
- models.responseGet.Data$DataBuilder
-questions/GetUserName.java
- questions.GetUserName
+models/bussinesTest/Request.java
+ models.bussinesTest.Request
+tasks/CreateUser.java
+ tasks.CreateUser
+tasks/GetUser.java
+ tasks.GetUser
+utils/Enums/Enums.java
+ utils.Enums.Enums
+tasks/AddInformationCreaterUserRequest.java
+ tasks.AddInformationCreaterUserRequest
+models/bussinesTest/ParamsItem.java
+ models.bussinesTest.ParamsItem
+ models.bussinesTest.ParamsItem$ParamsItemBuilder
+models/builders/createUserBuilder/CreateUserBuilder.java
+ models.builders.createUserBuilder.CreateUserBuilder
+models/createUser/PostCreateUser.java
+ models.createUser.PostCreateUser
+ models.createUser.PostCreateUser$PostCreateUserBuilder
+interactions/Post.java
+ interactions.Post
+interactions/ConsumeServices.java
+ interactions.ConsumeServices
+interactions/ConsumeServicesPostSimple.java
+ interactions.ConsumeServicesPostSimple
